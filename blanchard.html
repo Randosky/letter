@@ -1,0 +1,580 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+            line-height: 100%;
+        }
+
+        [style*="Arial"] {
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+            border: none;
+            -ms-interpolation-mode: bicubic;
+            max-width: 100% !important;
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+
+        .logo_center {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        /* description */
+
+        .description__head {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: #515151;
+            margin-top: 32px;
+            margin-bottom: 13px;
+        }
+
+        .description__descr {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 24px;
+            color: #515151;
+            margin-bottom: 13px;
+        }
+
+        .description__descr-last {
+            margin-bottom: 32px;
+        }
+
+        /* arts */
+
+        .arts__head {
+            color: #ffffff;
+            margin-top: 26px;
+            margin-bottom: 21px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .arts__img {
+            margin-bottom: 21px;
+        }
+
+        .arts__name {
+            color: #ffffff;
+            margin-bottom: 8px;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 24px;
+        }
+
+        .arts__descr {
+            color: #ffffff;
+            margin-bottom: 21px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        .arts__descr-last {
+            margin-bottom: 26px;
+        }
+
+        /* more */
+
+        .more__head {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #515151;
+            margin-top: 32px;
+            margin-bottom: 14px;
+        }
+
+        .more__icon {
+            margin-bottom: 14px;
+        }
+
+        .more_descr {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #515151;
+            margin-bottom: 38px;
+            width: 138px;
+        }
+
+        .more__button {
+            font-weight: 700;
+            font-size: 14px;
+            text-align: center;
+            cursor: pointer;
+            background: #9D5CD0;
+            border-radius: 48px;
+            width: 240px;
+            height: 45px;
+        }
+
+        .more__button a {
+            line-height: 0%;
+            color: #ffffff;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            margin-bottom: 32px;
+        }
+
+        .more__button-table {
+            margin-bottom: 32px;
+        }
+
+        /* footer */
+
+        .footer__icon {
+            margin-top: 27.5px;
+            margin-bottom: 12.5px;
+        }
+
+        .footer__descr {
+            font-weight: 400;
+            font-size: 12px;
+            color: #757575;
+            margin-bottom: 16px;
+        }
+
+        .footer__href {
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 24px;
+            color: #757575;
+        }
+
+        .footer__href a {
+            color: #9D5CD0;
+        }
+
+        .icon-1 {
+            margin-left: 228px;
+        }
+
+        .icon-2 {
+            margin-left: 19px;
+            margin-right: 19px;
+        }
+
+        .icon-3 {
+            margin-right: 228px;
+        }
+
+        /* more-mobile */
+
+        .more-mobile {
+            display: none;
+        }
+
+        .more-mobile__head {
+            margin-top: 21px;
+            margin-bottom: 14px;
+            width: 100%;
+        }
+
+        .more-mobile__icon {
+            margin-bottom: 14px;
+        }
+
+        .more-mobile__descr {
+            margin-bottom: 20px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #515151;
+            width: 224px;
+            width: 100%;
+        }
+
+        .more-mobile__descr-last {
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 620px) {
+            .table-600 {
+                width: 280px !important;
+            }
+
+            .table-520 {
+                width: 244px !important;
+            }
+
+            .header__logo {
+                width: 114px !important;
+                height: 25px !important;
+            }
+
+            .header__img {
+                width: 280px !important;
+                height: 300px !important;
+            }
+
+            .logo_center {
+                padding-top: 17px !important;
+                padding-bottom: 17px !important;
+            }
+
+            .arts__img {
+                width: 244px !important;
+                height: 84px !important;
+                margin-bottom: 10px !important;
+            }
+
+            .arts__name {
+                margin-bottom: 10px !important;
+            }
+
+            .icon-1 {
+                margin-left: 68px !important;
+            }
+
+            .icon-3 {
+                margin-right: 68px !important;
+            }
+
+            .more-mobile {
+                display: block;
+            }
+
+            .more {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="font-size:0px; font-color:#ffffff; opacity:0; visibility:hidden; width:0; height:0; display:none;">
+        Художественная галерея
+    </div>
+    <table cellpadding="0" cellspacing="0" class="table-600" width="600" align="center">
+        <tr bgcolor="#000">
+            <td align="center" class="logo_center">
+                <img src="https://i.ibb.co/WnKm7wN/logo.png" alt="Логотип" class="header__logo">
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <img src="https://i.ibb.co/k4QfsmP/head-img.jpg" alt="Задний фон" class="header__img">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" class="table-520 description" width="520" align="center">
+                    <tr>
+                        <td>
+                            <h2 class="description__head" style="font-family: Arial, Helvetica, sans-serif;">Торжество
+                                импрессионизма</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="description__descr" style="font-family: Arial, Helvetica, sans-serif;">
+                                Опыт говорит нам, что семантический разбор внешних противодействий требует анализа новых
+                                принципов формирования материально-технической и&nbsp;кадровой базы.
+                            </p>
+                            <p class="description__descr description__descr-last"
+                                style="font-family: Arial, Helvetica, sans-serif;">
+                                Задача организации, в&nbsp;особенности&nbsp;же внедрение современных методик,
+                                в&nbsp;своём
+                                классическом представлении, допускает внедрение глубокомысленных рассуждений. Есть над
+                                чем
+                                задуматься: элементы политического процесса преданы социально-демократической анафеме!
+                                Но&nbsp;интерактивные прототипы заблокированы в&nbsp;рамках своих собственных
+                                рациональных
+                                ограничений. Сторонники тоталитаризма в&nbsp;науке ограничены исключительно образом
+                                мышления.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table cellpadding="0" cellspacing="0" class="table-600" width="600" align="center">
+        <tr bgcolor="#000">
+            <td>
+                <table cellpadding="0" cellspacing="0" class="table-520 arts" width="520" align="center">
+                    <tr>
+                        <td>
+                            <h3 class="arts__head" style="font-family: Arial, Helvetica, sans-serif;">Представленные
+                                художники</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://i.ibb.co/306z66Y/art-1.png" class="arts__img" alt="Пример рисунка" border="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4 class="arts__name" style="font-family: Arial, Helvetica, sans-serif;">Поль Гоген</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="arts__descr" style="font-family: Arial, Helvetica, sans-serif;">Прежде всего,
+                                разбавленное изрядной долей эмпатии, рациональное
+                                мышление в&nbsp;значительной степени обусловливает важность укрепления моральных
+                                ценностей.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://i.ibb.co/h1Q9sfB/art-2.png" alt="Пример рисунка" class="arts__img">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4 class="arts__name" style="font-family: Arial, Helvetica, sans-serif;">Огюст Ренуар</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="arts__descr" style="font-family: Arial, Helvetica, sans-serif;">А&nbsp;также
+                                сделанные на&nbsp;базе интернет-аналитики выводы
+                                освещают чрезвычайно интересные особенности картины в&nbsp;целом.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://i.ibb.co/YBN8KFQ/art-3.png" alt="Пример рисунка" class="arts__img">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4 class="arts__name" style="font-family: Arial, Helvetica, sans-serif;">Клод Моне</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="arts__descr" style="font-family: Arial, Helvetica, sans-serif;">Современная
+                                методология разработки однозначно фиксирует необходимость
+                                системы массового участия.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://i.ibb.co/BCmwtBQ/art-4.png" alt="Пример рисунка" class="arts__img">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4 class="arts__name" style="font-family: Arial, Helvetica, sans-serif;">Эдуард Мане</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="arts__descr" style="font-family: Arial, Helvetica, sans-serif;">
+                                Но&nbsp;социально-экономическое развитие является качественно новой
+                                ступенью вывода текущих активов.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://i.ibb.co/wyQRHtM/art-5.png" alt="Пример рисунка" class="arts__img">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4 class="arts__name" style="font-family: Arial, Helvetica, sans-serif;">Винсент Ван Гог
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="arts__descr arts__descr-last" style="font-family: Arial, Helvetica, sans-serif;">
+                                Повседневная практика показывает, что разбавленное изрядной долей
+                                эмпатии, рациональное мышление требует анализа поставленных обществом задач.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table cellpadding="0" cellspacing="0" class="table-600 more" width="600" align="center">
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" class="table-520" width="520" align="center">
+                    <tr>
+                        <td align="left">
+                            <h3 class="more__head" style="font-family: Arial, Helvetica, sans-serif;">И это ещё не всё!
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <img src="https://i.ibb.co/sC2175B/more-1.png" alt="Иконка" class="more__icon">
+                        </td>
+                        <td align="left">
+                            <img src="https://i.ibb.co/kGBNZhw/more-2.png" alt="Иконка" class="more__icon">
+                        </td>
+                        <td align="left">
+                            <img src="https://i.ibb.co/pWJGj7r/more-3.png" alt="Иконка" class="more__icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <p class="more_descr" style="font-family: Arial, Helvetica, sans-serif;">Уникальные подборки
+                                работ с&nbsp;авторскими рецензиями</p>
+                        </td>
+                        <td align="left">
+                            <p class="more_descr" style="font-family: Arial, Helvetica, sans-serif;">Возможность
+                                настроить нашу рассылку под свой личный вкус</p>
+                        </td>
+                        <td align="left">
+                            <p class="more_descr" style="font-family: Arial, Helvetica, sans-serif;">У&nbsp;вас есть
+                                пожелания и&nbsp;предложения?
+                                Напишите нам в&nbsp;ответ на&nbsp;это письмо!
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" align="center" class="more__button-table">
+                    <tr>
+                        <td class="more__button" align="center">
+                            <a href="#" style="font-family: Arial, Helvetica, sans-serif;">Узнать
+                                все подробности</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table cellpadding="0" cellspacing="0" class="table-600 more-mobile" width="600" align="center">
+        <tr>
+            <td align="left">
+                <h3 class="more__head more-mobile__head" style="font-family: Arial, Helvetica, sans-serif;">И это ещё не
+                    всё!
+                </h3>
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                <img src="https://i.ibb.co/sC2175B/more-1.png" alt="Иконка" class="more__icon more-mobile__icon">
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                <p class="more-mobile__descr" style="font-family: Arial, Helvetica, sans-serif;">Уникальные подборки
+                    работ с&nbsp;авторскими рецензиями</p>
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                <img src="https://i.ibb.co/kGBNZhw/more-2.png" alt="Иконка" class="more__icon more-mobile__icon">
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                <p class="more-mobile__descr" style="font-family: Arial, Helvetica, sans-serif;">Возможность
+                    настроить нашу рассылку под свой личный вкус</p>
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                <img src="https://i.ibb.co/pWJGj7r/more-3.png" alt="Иконка" class="more__icon more-mobile__icon">
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                <p class="more-mobile__descr more-mobile__descr-last"
+                    style="font-family: Arial, Helvetica, sans-serif;">У&nbsp;вас есть
+                    пожелания и&nbsp;предложения?
+                    Напишите нам в&nbsp;ответ на&nbsp;это письмо!</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" align="center"
+                    class="more__button-table more-mobile__button-table">
+                    <tr>
+                        <td class="more__button more-mobile__button" align="center">
+                            <a href="#" style="font-family: Arial, Helvetica, sans-serif;">Узнать
+                                все подробности</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" class="table-600 footer" width="600" align="center" bgcolor="#000">
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" class="table-600 footer__top" width="600" align="center">
+                    <tr>
+                        <td align="right">
+                            <img src="https://i.ibb.co/BZLxf9S/vk.png" class="footer__icon icon-1" alt="Вконтакте">
+                        </td>
+                        <td align="center">
+                            <img src="https://i.ibb.co/4KZqCvd/instagram.png" class="footer__icon icon-2" alt="Инстаграмм">
+                        </td>
+                        <td align="left">
+                            <img src="https://i.ibb.co/mNW4DXs/fb.png" class="footer__icon icon-3" alt="Фейсбук">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <p class="footer__descr">Blanchard © 2020 / Все права защищены</p>
+            </td>
+        </tr>
+    </table>
+    <table cellpadding="0" cellspacing="0" class="table-600 footer__bottom" width="600" align="center">
+        <tr bgcolor="#EBEBEB">
+            <td align="center">
+                <p class="footer__href">
+                    Вы можете так же <a href="#">отписаться от рассылки</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+</body>
